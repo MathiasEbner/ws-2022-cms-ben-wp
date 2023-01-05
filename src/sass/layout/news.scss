@@ -1,0 +1,53 @@
+#news {
+    width: 100%;
+    background: $brown-middle url("../../themes/ben/images/Schnecke.svg") center right no-repeat;
+    padding: 7rem;
+    h2 {
+        color: $white;
+    }
+    .newsContainer {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        article {
+            width: 33%;
+            max-width: 380px;
+
+            img {
+                width: 100%;
+                height: 255px;
+                object-fit: cover;
+            }
+            .newsTextContainer {
+                background-color: $grey;
+                max-height: 250px;
+                padding: 1.7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 0.7rem;
+                margin-top: -5px;
+                .newsText {
+                    display: -webkit-box;
+
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                .newsInfo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
+                        font-size: 0.85rem;
+                        font-weight: 200;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

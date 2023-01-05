@@ -1,0 +1,39 @@
+header {
+    background-image: url("../../themes/ben/images/hero_bearbeitet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    .topNavContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.2rem;
+        a {
+            text-decoration: none;
+        }
+    }
+    .headerMainContainer {
+        margin-top: 100px;
+        .headerText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 150px;
+            .slogan {
+                max-width: 950px;
+                font-family: "Vollkorn";
+                text-align: center;
+                font-weight: 800;
+                font-size: 5.5rem;
+                line-height: 8rem;
+                color: $white;
+            }
+            #headerButton {
+                font-size: 1.3rem;
+                padding: 15px 29px;
+                border-width: 2px;
+            }
+        }
+    }
+}

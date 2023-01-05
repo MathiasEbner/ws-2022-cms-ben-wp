@@ -1,0 +1,772 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* vollkorn-regular - latin */
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/vollkorn-v21-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/vollkorn-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/vollkorn-v21-latin-regular.woff2") format("woff2"), url("./fonts/vollkorn-v21-latin-regular.woff") format("woff"), url("./fonts/vollkorn-v21-latin-regular.ttf") format("truetype"), url("./fonts/vollkorn-v21-latin-regular.svg#Vollkorn") format("svg"); /* Legacy iOS */
+}
+/* vollkorn-500 - latin */
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/vollkorn-v21-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/vollkorn-v21-latin-500.eot?#iefix") format("embedded-opentype"), url("./fonts/vollkorn-v21-latin-500.woff2") format("woff2"), url("./fonts/vollkorn-v21-latin-500.woff") format("woff"), url("./fonts/vollkorn-v21-latin-500.ttf") format("truetype"), url("./fonts/vollkorn-v21-latin-500.svg#Vollkorn") format("svg"); /* Legacy iOS */
+}
+/* vollkorn-600 - latin */
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/vollkorn-v21-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/vollkorn-v21-latin-600.eot?#iefix") format("embedded-opentype"), url("./fonts/vollkorn-v21-latin-600.woff2") format("woff2"), url("./fonts/vollkorn-v21-latin-600.woff") format("woff"), url("./fonts/vollkorn-v21-latin-600.ttf") format("truetype"), url("./fonts/vollkorn-v21-latin-600.svg#Vollkorn") format("svg"); /* Legacy iOS */
+}
+/* vollkorn-700 - latin */
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/vollkorn-v21-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/vollkorn-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/vollkorn-v21-latin-700.woff2") format("woff2"), url("./fonts/vollkorn-v21-latin-700.woff") format("woff"), url("./fonts/vollkorn-v21-latin-700.ttf") format("truetype"), url("./fonts/vollkorn-v21-latin-700.svg#Vollkorn") format("svg"); /* Legacy iOS */
+}
+/* vollkorn-800 - latin */
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/vollkorn-v21-latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/vollkorn-v21-latin-800.eot?#iefix") format("embedded-opentype"), url("./fonts/vollkorn-v21-latin-800.woff2") format("woff2"), url("./fonts/vollkorn-v21-latin-800.woff") format("woff"), url("./fonts/vollkorn-v21-latin-800.ttf") format("truetype"), url("./fonts/vollkorn-v21-latin-800.svg#Vollkorn") format("svg"); /* Legacy iOS */
+}
+/* vollkorn-900 - latin */
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/vollkorn-v21-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/vollkorn-v21-latin-900.eot?#iefix") format("embedded-opentype"), url("./fonts/vollkorn-v21-latin-900.woff2") format("woff2"), url("./fonts/vollkorn-v21-latin-900.woff") format("woff"), url("./fonts/vollkorn-v21-latin-900.ttf") format("truetype"), url("./fonts/vollkorn-v21-latin-900.svg#Vollkorn") format("svg"); /* Legacy iOS */
+}
+/* work-sans-200 - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/work-sans-v18-latin-200.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/work-sans-v18-latin-200.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v18-latin-200.woff2") format("woff2"), url("../fonts/work-sans-v18-latin-200.woff") format("woff"), url("../fonts/work-sans-v18-latin-200.ttf") format("truetype"), url("../fonts/work-sans-v18-latin-200.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+/* work-sans-300 - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/work-sans-v18-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/work-sans-v18-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v18-latin-300.woff2") format("woff2"), url("../fonts/work-sans-v18-latin-300.woff") format("woff"), url("../fonts/work-sans-v18-latin-300.ttf") format("truetype"), url("../fonts/work-sans-v18-latin-300.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+/* work-sans-regular - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/work-sans-v18-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/work-sans-v18-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v18-latin-regular.woff2") format("woff2"), url("../fonts/work-sans-v18-latin-regular.woff") format("woff"), url("../fonts/work-sans-v18-latin-regular.ttf") format("truetype"), url("../fonts/work-sans-v18-latin-regular.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+/* work-sans-500 - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/work-sans-v18-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/work-sans-v18-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v18-latin-500.woff2") format("woff2"), url("../fonts/work-sans-v18-latin-500.woff") format("woff"), url("../fonts/work-sans-v18-latin-500.ttf") format("truetype"), url("../fonts/work-sans-v18-latin-500.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+/* work-sans-600 - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/work-sans-v18-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/work-sans-v18-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v18-latin-600.woff2") format("woff2"), url("../fonts/work-sans-v18-latin-600.woff") format("woff"), url("../fonts/work-sans-v18-latin-600.ttf") format("truetype"), url("../fonts/work-sans-v18-latin-600.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+  visibility: visible;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Vollkorn";
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #da923f;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.subHeadline {
+  font-size: 1.5rem;
+  font-family: "Vollkorn";
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 4rem;
+}
+
+.subHeadlineProduct {
+  font-size: 1.5rem;
+  color: #da923f;
+  font-family: "Vollkorn";
+  font-weight: 500;
+}
+
+.subHeadlineWorkshop {
+  font-size: 1.5rem;
+  color: #da923f;
+  font-family: "Vollkorn";
+  font-weight: 500;
+}
+
+.subHeadlineFooter {
+  font-size: 1.5rem;
+  font-family: "Vollkorn";
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.footerBold {
+  font-weight: 600;
+}
+
+p {
+  font-family: "Work Sans";
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #3c690f;
+  border: 1px solid #532d15;
+  color: #ffffff;
+  font-weight: 500;
+  display: block;
+  width: fit-content;
+  padding: 12px 16px;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+  background-color: #335b0c;
+}
+
+.jobButton {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+  display: block;
+  width: fit-content;
+  padding: 12px 16px;
+  font-size: 1.15rem;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  transition: all 0.25s ease-in-out;
+}
+
+.jobButton:hover {
+  border: 2px solid #282828;
+  background-color: #ffffff;
+  color: #282828;
+}
+
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #hamburger {
+    width: 24px;
+    height: 13px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;
+  }
+  #hamburger [class^=line-] {
+    position: absolute;
+    background-color: #ffffff;
+    height: 1px;
+    transition: transform 0.5s ease;
+    right: 0;
+  }
+  #hamburger:hover {
+    cursor: pointer;
+  }
+  #hamburger .line-1 {
+    top: 0;
+    width: 100%;
+  }
+  #hamburger .line-2 {
+    top: 8px;
+    width: 75%;
+  }
+  #hamburger.open .line-1 {
+    transform: rotate(45deg);
+    transform-origin: 0px 0px;
+  }
+  #hamburger.open .line-2 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+    width: 100%;
+    transform-origin: 0px 5px;
+  }
+  #hamburger.open + ul {
+    transform: translateX(0);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  #hamburger.closed + ul {
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}
+#mainnav {
+  display: flex;
+  align-items: center;
+}
+#mainnav #hamburger {
+  visibility: hidden;
+}
+#mainnav ul {
+  display: flex;
+  justify-content: space-between;
+}
+#mainnav ul li {
+  padding: 0rem 1.2rem 0rem 1.2rem;
+}
+#mainnav ul li a {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+#mainnav ul li .active {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.4rem;
+}
+
+@media (min-width: 0rem) and (max-width: 42.5rem) {
+  .topNavContainer #mainnav {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+  }
+  .topNavContainer #mainnav #hamburger {
+    visibility: visible;
+  }
+  .topNavContainer #mainnav ul {
+    display: block;
+    position: fixed;
+    padding: 3rem 1rem 1rem 1rem;
+    width: 100vw;
+    height: 100vh;
+    max-width: 20rem;
+    top: 0;
+    right: 0;
+    background-color: #282828;
+    box-shadow: -5px 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  .topNavContainer #mainnav ul li {
+    font-size: 1.37rem;
+    text-align: right;
+    padding: 1rem 0 1rem 0;
+    text-decoration: none;
+  }
+  .topNavContainer #mainnav ul li a {
+    text-transform: unset;
+    font-weight: 300;
+    text-decoration: none;
+  }
+}
+header {
+  background-image: url("../../themes/ben/images/hero_bearbeitet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+header .topNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem;
+}
+header .topNavContainer a {
+  text-decoration: none;
+}
+header .headerMainContainer {
+  margin-top: 100px;
+}
+header .headerMainContainer .headerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+header .headerMainContainer .headerText .slogan {
+  max-width: 950px;
+  font-family: "Vollkorn";
+  text-align: center;
+  font-weight: 800;
+  font-size: 5.5rem;
+  line-height: 8rem;
+  color: #ffffff;
+}
+header .headerMainContainer .headerText #headerButton {
+  font-size: 1.3rem;
+  padding: 15px 29px;
+  border-width: 2px;
+}
+
+#products {
+  width: 100%;
+  background-color: #282828;
+  padding: 7rem;
+}
+#products .productsContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#products .productsContainer .product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#products .productsContainer .product img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#products .productsContainer .product .productTextContainer {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+#products .productsContainer .product:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#news {
+  width: 100%;
+  background: #da923f url("../../themes/ben/images/Schnecke.svg") center right no-repeat;
+  padding: 7rem;
+}
+#news h2 {
+  color: #ffffff;
+}
+#news .newsContainer {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#news .newsContainer article {
+  width: 33%;
+  max-width: 380px;
+}
+#news .newsContainer article img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+}
+#news .newsContainer article .newsTextContainer {
+  background-color: #282828;
+  max-height: 250px;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.7rem;
+  margin-top: -5px;
+}
+#news .newsContainer article .newsTextContainer .newsText {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#news .newsContainer article .newsTextContainer .newsInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#news .newsContainer article .newsTextContainer .newsInfo p {
+  font-size: 0.85rem;
+  font-weight: 200;
+  line-height: 1rem;
+}
+
+#jobs {
+  width: 100%;
+  background: #282828 url("../../themes/ben/images/Kipferl.svg") bottom left no-repeat;
+  padding: 7rem;
+}
+#jobs p:nth-child(3) {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+#jobs .jobsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#jobs .jobsContainer .job {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+#jobs .jobsContainer .job img {
+  width: 100%;
+  height: auto;
+  filter: blur(1.5px);
+  -webkit-filter: blur(1.5px);
+}
+#jobs .jobsContainer .job a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#jobs .button {
+  margin: auto;
+  margin-top: 100px;
+}
+
+#guides {
+  width: 100%;
+  background: #282828 url("../../themes/ben/images/Baguette.svg") center no-repeat;
+  padding: 7rem;
+}
+#guides p:nth-child(3) {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+#guides .guidesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#guides .guidesContainer .guide {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+#guides .guidesContainer .guide img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+#guides .guidesContainer .guide a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#guides .button {
+  margin: auto;
+  margin-top: 100px;
+}
+
+#headerWorkshop {
+  background: #da923f;
+  height: auto;
+}
+
+#workshops {
+  width: 100%;
+  background: #da923f;
+  padding: 7rem;
+}
+#workshops h2 {
+  color: #ffffff;
+}
+#workshops .workshopsContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #282828;
+}
+#workshops .workshopsContainer .workshop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#workshops .workshopsContainer .workshop img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#workshops .workshopsContainer .workshop .workshopTextContainer {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+#workshops .workshopsContainer .workshop p:nth-child(2) {
+  font-style: italic;
+}
+#workshops .workshopsContainer .workshop:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#register {
+  width: 100%;
+  background: #da923f;
+  padding: 7rem;
+}
+#register h2 {
+  color: #ffffff;
+}
+
+#headerAbout {
+  background: #da923f;
+  height: auto;
+}
+
+#energie {
+  width: 100%;
+  background: #da923f;
+  padding: 7rem;
+}
+#energie h2 {
+  color: #ffffff;
+}
+#energie .energieContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#energie .energieContainer .imagesColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+}
+#energie .energieContainer .imagesColumn img {
+  height: 350px;
+  object-fit: cover;
+}
+#energie .energieContainer .textColumn {
+  padding: 0rem;
+  width: 50%;
+}
+#energie .energieContainer .textColumn .workshopTextContainer {
+  background-color: #3c690f;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#energie .energieContainer .textColumn .workshopTextContainer .subHeadlineWorkshop {
+  color: #ffffff;
+}
+
+#ben {
+  width: 100%;
+  background: #282828 url("../../themes/ben/images/Semmerl.svg") bottom left no-repeat;
+  padding: 7rem;
+}
+#ben .benContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#ben .benContainer img {
+  height: 550px;
+  object-fit: cover;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#ben .benContainer .textColumn {
+  width: 50%;
+}
+#ben .benContainer .textColumn .workshopTextContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer {
+  width: 100%;
+  background: #da923f url("../../themes/ben/images/FittnesBrot.svg") bottom right no-repeat;
+  padding: 6rem;
+}
+footer .footerInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+footer .footerInfo .adress {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+footer .footerInfo .adress p:nth-child(5) {
+  margin-top: 1rem;
+}
+footer .footerInfo .openingHours {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+footer .footerInfo .openingHours p {
+  text-align: right;
+}
+footer .footerInfo .openingHours p:nth-child(1) {
+  text-align: left;
+}
+footer .footerInfo .contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+footer .footerInfo .contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .bottomContainer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .bottomContainer p,
+footer .bottomContainer a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Work Sans";
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+@include breakpoint(0, 680) {
+    .topNavContainer {
+        #mainnav {
+            position: fixed;
+            z-index: 100;
+            right: 0;
+            top: 0;
+            padding: 1rem;
+            #hamburger {
+                visibility: visible;
+            }
+            ul {
+                display: block;
+                //justify-content: space-between;
+                position: fixed;
+                padding: 3rem 1rem 1rem 1rem;
+                width: 100vw;
+                height: 100vh;
+                max-width: 20rem;
+                top: 0;
+                right: 0;
+                background-color: $grey;
+                box-shadow: -5px 0 10px 0 rgb(0 0 0 /0.1);
+                li {
+                    font-size: 1.37rem;
+                    text-align: right;
+                    padding: 1rem 0 1rem 0;
+                    text-decoration: none;
+                    a {
+                        text-transform: unset;
+                        font-weight: 300;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+#mainnav {
+    display: flex;
+    align-items: center;
+    #hamburger {
+        visibility: hidden;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            padding: 0rem 1.2rem 0rem 1.2rem;
+            a {
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: $white;
+            }
+            .active {
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 0.4rem;
+            }
+        }
+    }
+}

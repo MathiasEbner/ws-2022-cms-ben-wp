@@ -1,0 +1,40 @@
+#jobs {
+    width: 100%;
+    background: $grey url("../../themes/ben/images/Kipferl.svg") bottom left no-repeat;
+    padding: 7rem;
+    p:nth-child(3) {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 400;
+    }
+
+    .jobsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        .job {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            img {
+                width: 100%;
+                height: auto;
+                filter: blur(1.5px);
+                -webkit-filter: blur(1.5px);
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .button {
+        margin: auto;
+        margin-top: 100px;
+    }
+}

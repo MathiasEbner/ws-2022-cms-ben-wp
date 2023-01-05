@@ -1,0 +1,39 @@
+#guides {
+    width: 100%;
+    background: $grey url("../../themes/ben/images/Baguette.svg") center no-repeat;
+    padding: 7rem;
+    p:nth-child(3) {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 400;
+    }
+
+    .guidesContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        .guide {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            img {
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .button {
+        margin: auto;
+        margin-top: 100px;
+    }
+}
