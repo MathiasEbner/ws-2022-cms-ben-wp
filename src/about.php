@@ -104,7 +104,7 @@
                 </div>
             </section>
         </main>
-        <script src="./main.js"></script>
+        <script src="<?php echo get_template_directory_uri() ?>/main.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function (event) {
                 MainNav.init();
