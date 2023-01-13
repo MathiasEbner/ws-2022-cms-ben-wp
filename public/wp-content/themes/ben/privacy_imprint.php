@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: TemplateAbout
+ * Template Name: TemplatePrivacy
  */
 ?>
 <!DOCTYPE html>
@@ -51,17 +51,10 @@
         </header>
         <main>
             <section id="energie">
-                <h2>100% nachhaltige Energie</h2>
-                <p class="subHeadline">Alle unsere Standorte werden mit gründer Energie betriebens</p>
                 <div class="energieContainer">
-                    <div class="imagesColumn">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/Sonnenuntergang.jpg" alt="" />
-                        <img src="<?php echo get_template_directory_uri() ?>/images/getreide.jpg" alt="" />
-                    </div>
                     <div class="textColumn">
-                        <div class="workshopTextContainer">
                             <?php
-                                    $about_query = new WP_Query( array( 'p' => 87 ));
+                                    $about_query = new WP_Query( array( 'p' => 104 ));
                                     if( $about_query->have_posts() ) {
 
                                         while( $about_query->have_posts() ) {
@@ -73,31 +66,7 @@
                             }
                             wp_reset_postdata();
                             ?>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="ben">
-                <h2>Ben Müller</h2>
-                <p class="subHeadline">Backen ist Handwerk. Backen ist Kunst</p>
-                <div class="benContainer">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/BenMueller.jpg" alt="" />
-                    <div class="textColumn">
-                        <div class="workshopTextContainer">
-                            <?php
-                                    $about_query = new WP_Query( array( 'p' => 91 ));
-                                    if( $about_query->have_posts() ) {
-
-                                        while( $about_query->have_posts() ) {
-                                            $about_query->the_post(); 
-                                ?>  
-                                <?php the_content(); ?>
-                                <?php
-                                }
-                            }
-                            wp_reset_postdata();
-                            ?>
-                        </div>
+                
                     </div>
                 </div>
             </section>

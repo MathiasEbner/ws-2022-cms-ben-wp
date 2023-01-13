@@ -5,6 +5,7 @@ cp ./src/header.php ./public/wp-content/themes/ben
 cp ./src/footer.php ./public/wp-content/themes/ben
 cp ./src/workshops.php ./public/wp-content/themes/ben
 cp ./src/about.php ./public/wp-content/themes/ben
+cp ./src/privacy_imprint.php ./public/wp-content/themes/ben
 cp ./src/functions.php ./public/wp-content/themes/ben
 cp ./src/favicons/*.* ./public/wp-content/themes/ben
 cp -R ./src/images ./public/wp-content/themes/ben

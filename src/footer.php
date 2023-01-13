@@ -34,7 +34,7 @@
         </div>
         <div class="contact">
             <p class="subHeadlineFooter">Kontaktieren sie uns</p>
-     <?php
+        <?php
                     $workshops_query = new WP_Query( array( 'p' => 59 ));
                     if( $workshops_query->have_posts() ) {
 

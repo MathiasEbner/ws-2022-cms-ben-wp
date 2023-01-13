@@ -1,12 +1,3 @@
-<!--
-    TODO: – Add title
-    – Add keywords & description
-    - Run https://realfavicongenerator.net/ for favicons, tile & touchicons
-    – Run https://realfavicongenerator.net/social for og image & info
-    - Edit privacy info
-    - Create E-mail-address datenschutz@
-    – Host fonts locally with https://google-webfonts-helper.herokuapp.com/fonts
--->
 <?php
 /*
  * Template Name: TemplateAbout
@@ -23,6 +14,17 @@
         />
         <meta name="keywords" content="Salzburg, Bäcker, Bäckerei, Frühstück, Jobs, Lehrberuf, Brot, Kaffee, Torte" />
         <title>Ben Müller | Über uns</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ?>/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="Ben bäckt, die beste Bäckerei mit dem besten Cafe!" />
+        <meta property="og:description" content="Frisch gebackenes Brot zum Verlieben, der beste Kaffee der Stadt und köstliche Torten. Was will man mehr?">
+        <meta property="og:url" content="http://vm-ultramarine.multimediatechnology.at/ben" />
+        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/hero_bearbeitet.jpg" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css" />
         <?php wp_head(); ?>
     </head>
@@ -58,21 +60,19 @@
                     </div>
                     <div class="textColumn">
                         <div class="workshopTextContainer">
-                            <p class="subHeadlineWorkshop">Weil wir es der Umwelt schuldig sind</p>
-                            <p>
-                                Je hochwertiger das Material, desto besser das Resultat. Deswegen setzen wir auf
-                                Bio-Qualität, verzichten auf Backtriebmittel und geben dem Teig die Zeit, die er
-                                braucht. Schon seit jeher setzen wir dabei auf 100% Mehl aus Österreich und 100%
-                                Ökostrom. Dadurch sind wir weitgehend unabhängig vom Geschehen auf dem Weltmarkt und
-                                können unseren Kunden verlässlicher Partner sein.
-                            </p>
-                            <p>
-                                Um die Wichtigkeit der Regionalität zu unterstreichen, lassen wir auch regelmäßig
-                                Zertifizierungen durchführen. Es sind oft die kleinen Dinge, die beim bewussten Backen
-                                eine große Rolle spielen. Dabei sind es nicht nur die Lebensmittel, die wir verwenden,
-                                sondern auch die Utensilien, die wir einsetzen, die einen nachhaltigen Unterschied
-                                machen können. Umweltbewusst, ressourcenschonend und fair zu backen liegt uns am Herzen.
-                            </p>
+                            <?php
+                                    $about_query = new WP_Query( array( 'p' => 87 ));
+                                    if( $about_query->have_posts() ) {
+
+                                        while( $about_query->have_posts() ) {
+                                            $about_query->the_post(); 
+                                ?>  
+                                <?php the_content(); ?>
+                                <?php
+                                }
+                            }
+                            wp_reset_postdata();
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -84,21 +84,19 @@
                     <img src="<?php echo get_template_directory_uri() ?>/images/BenMueller.jpg" alt="" />
                     <div class="textColumn">
                         <div class="workshopTextContainer">
-                            <p class="subHeadlineWorkshop">Wenn Leidenschaft zur Berufung wird</p>
-                            <p>
-                                Für mich war das Backen immer schon etwas ganz spezielles. Schon mit jungen Jahren hatte
-                                ich sehr viel Spaß meiner Familie Köstlichkeiten zu backen. Nach meiner erfolgreichen
-                                Ausbildung und Meisterprüfung, beschloss ich meiner Traumberufung nachzugehen. Dies war
-                                definitiv der richtige Schritt. Heute hat die Ben bäckt Kette schon drei Standorte in
-                                Salzburg.
-                            </p>
-                            <p>
-                                Backen ist für uns ein kreativer Prozess, bei dem aus hochwertigen Materialien mit
-                                handwerklichem Geschick etwas Neues entsteht - etwas, das uns bewegt und Freude macht.
-                                Bei uns rund um die Uhr gearbeitet. Während andere schlafen, läuft unser Backofen auf
-                                Hochtouren. 15 Mitarbeiter, davon 9 Bäcker und 2 Lehrlinge, sorgen dafür, dass Ihr
-                                Frühstück bereits in einer unserer vier Filialen auf Sie wartet.
-                            </p>
+                            <?php
+                                    $about_query = new WP_Query( array( 'p' => 91 ));
+                                    if( $about_query->have_posts() ) {
+
+                                        while( $about_query->have_posts() ) {
+                                            $about_query->the_post(); 
+                                ?>  
+                                <?php the_content(); ?>
+                                <?php
+                                }
+                            }
+                            wp_reset_postdata();
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -112,5 +110,6 @@
         </script>
         <?php get_footer(); ?>
         <?php wp_footer(); ?> 
+    
     </body>
 </html>

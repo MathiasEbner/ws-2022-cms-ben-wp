@@ -1,12 +1,3 @@
-<!--
-    TODO: – Add title
-    – Add keywords & description
-    - Run https://realfavicongenerator.net/ for favicons, tile & touchicons
-    – Run https://realfavicongenerator.net/social for og image & info
-    - Edit privacy info
-    - Create E-mail-address datenschutz@
-    – Host fonts locally with https://google-webfonts-helper.herokuapp.com/fonts
--->
 <?php
 /*
  * Template Name: TemplateIndex
@@ -23,6 +14,18 @@
         />
         <meta name="keywords" content="Salzburg, Bäcker, Bäckerei, Frühstück, Jobs, Lehrberuf, Brot, Kaffee, Torte" />
         <title>Ben Müller | Bäckerei</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ?>/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="Ben bäckt, die beste Bäckerei mit dem besten Cafe!" />
+        <meta property="og:description" content="Frisch gebackenes Brot zum Verlieben, der beste Kaffee der Stadt und köstliche Torten. Was will man mehr?">
+        <meta property="og:url" content="http://vm-ultramarine.multimediatechnology.at/ben" />
+        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/hero_bearbeitet.jpg" />
+
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css" />
         <?php wp_head(); ?>
     </head>
@@ -115,5 +118,28 @@
         </script>
         <?php get_footer(); ?>
         <?php wp_footer(); ?> 
+        <!-- Image Sources:
+                https://www.freepik.com/free-vector/collection-handrawn-elements-bakery_10362246.htm#query=bread&position=1&from_view=search&track=sph
+                https://www.freepik.com/free-vector/set-wheats-ears_15027822.htm#query=weizen&position=0&from_view=search&track=sph
+                https://www.pexels.com/de-de/foto/person-die-teig-auf-braunem-holztisch-halt-6287295/
+                https://unsplash.com/photos/2-U0A2tNYhM
+                https://unsplash.com/photos/RndRFJ1v1kk
+                https://unsplash.com/photos/6VhPY27jdps
+                https://unsplash.com/photos/XtYPjMTNQUA
+                https://unsplash.com/photos/Js05xQ5TLUw
+                https://unsplash.com/photos/5QgIuuBxKwM
+                https://unsplash.com/photos/neu4T59mTcY
+                https://unsplash.com/photos/qPQqZ0y-rJ0
+                https://unsplash.com/photos/jHu6Zyarhyk
+                https://unsplash.com/photos/qoPrNU12Cg0
+                https://unsplash.com/photos/0w-uTa0Xz7w
+                https://unsplash.com/photos/hbYrBY8eVMc
+                https://www.pexels.com/de-de/foto/mann-kuche-dessert-glucklich-8478178/
+                https://www.pexels.com/de-de/foto/holz-ferien-winter-baum-5498382/
+                https://www.pexels.com/de-de/foto/bar-freunde-manner-lacheln-5529899/
+                https://unsplash.com/photos/LqkFX2Km1a0
+                https://unsplash.com/photos/Ns2aJ5OXKds
+                https://unsplash.com/photos/SIhqhxUA2_c
+        -->
     </body>
 </html>

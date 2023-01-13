@@ -1,12 +1,3 @@
-<!--
-    TODO: – Add title
-    – Add keywords & description
-    - Run https://realfavicongenerator.net/ for favicons, tile & touchicons
-    – Run https://realfavicongenerator.net/social for og image & info
-    - Edit privacy info
-    - Create E-mail-address datenschutz@
-    – Host fonts locally with https://google-webfonts-helper.herokuapp.com/fonts
--->
 <?php
 /*
  * Template Name: TemplateWorkshops
@@ -23,6 +14,17 @@
         />
         <meta name="keywords" content="Salzburg, Bäcker, Bäckerei, Frühstück, Jobs, Lehrberuf, Brot, Kaffee, Torte" />
         <title>Ben Müller | Workshops</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ?>/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="Ben bäckt, die beste Bäckerei mit dem besten Cafe!" />
+        <meta property="og:description" content="Frisch gebackenes Brot zum Verlieben, der beste Kaffee der Stadt und köstliche Torten. Was will man mehr?">
+        <meta property="og:url" content="http://vm-ultramarine.multimediatechnology.at/ben" />
+        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/hero_bearbeitet.jpg" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css" />
         <?php wp_head(); ?>
     </head>
