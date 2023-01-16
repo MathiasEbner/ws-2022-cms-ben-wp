@@ -11,6 +11,7 @@ function my_theme_setup(){
 }
 
 add_action('after_setup_theme', 'my_theme_setup');
+
 define('ALLOW_UNFILTERED_UPLOADS', true);
 // Enable SVG support
 function cc_mime_types($mimes) {

@@ -51,6 +51,6 @@
     </div>
     <div class="bottomContainer">
         <p>@ 2023 Ben Müller</p>
-        <a href="#">Impressum & Datenschutz</a>
+        <a href="<?php echo get_permalink("102"); ?>">Impressum & Datenschutz</a>
     </div>
 </footer>
