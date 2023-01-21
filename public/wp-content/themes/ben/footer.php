@@ -3,7 +3,7 @@
         <div class="adress">
             <p class="subHeadlineFooter">Adresse</p>
             <?php
-                    $workshops_query = new WP_Query( array( 'p' => 51 ));
+                    $workshops_query = new WP_Query( array( 'p' => 26 ));
                     if( $workshops_query->have_posts() ) {
 
                         while( $workshops_query->have_posts() ) {
@@ -19,7 +19,7 @@
         <div class="openingHours">
             <p class="subHeadlineFooter">Öffnungszeiten</p>
             <?php
-                    $workshops_query = new WP_Query( array( 'p' => 56 ));
+                    $workshops_query = new WP_Query( array( 'p' => 24 ));
                     if( $workshops_query->have_posts() ) {
 
                         while( $workshops_query->have_posts() ) {
@@ -35,7 +35,7 @@
         <div class="contact">
             <p class="subHeadlineFooter">Kontaktieren sie uns</p>
         <?php
-                    $workshops_query = new WP_Query( array( 'p' => 59 ));
+                    $workshops_query = new WP_Query( array( 'p' => 22 ));
                     if( $workshops_query->have_posts() ) {
 
                         while( $workshops_query->have_posts() ) {
@@ -51,6 +51,6 @@
     </div>
     <div class="bottomContainer">
         <p>@ 2023 Ben Müller</p>
-        <a href="<?php echo get_permalink("102"); ?>">Impressum & Datenschutz</a>
+        <a href="<?php echo get_permalink("15"); ?>">Impressum & Datenschutz</a>
     </div>
 </footer>

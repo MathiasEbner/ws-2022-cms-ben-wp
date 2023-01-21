@@ -109,7 +109,7 @@
                 <p class="subHeadline">Sie lieben das Backen? Nutzen Sie ihre Chance!</p>
                 <div class="formContainer">
                 <?php
-                    $workshops_query = new WP_Query( array( 'p' => 23 ));
+                    $workshops_query = new WP_Query( array( 'p' => 58 ));
                     if( $workshops_query->have_posts() ) {
 
                         while( $workshops_query->have_posts() ) {

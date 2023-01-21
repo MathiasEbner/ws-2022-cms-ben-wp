@@ -61,7 +61,7 @@
                     <div class="textColumn">
                         <div class="workshopTextContainer">
                             <?php
-                                    $about_query = new WP_Query( array( 'p' => 87 ));
+                                    $about_query = new WP_Query( array( 'p' => 20 ));
                                     if( $about_query->have_posts() ) {
 
                                         while( $about_query->have_posts() ) {
@@ -85,7 +85,7 @@
                     <div class="textColumn">
                         <div class="workshopTextContainer">
                             <?php
-                                    $about_query = new WP_Query( array( 'p' => 91 ));
+                                    $about_query = new WP_Query( array( 'p' => 18 ));
                                     if( $about_query->have_posts() ) {
 
                                         while( $about_query->have_posts() ) {

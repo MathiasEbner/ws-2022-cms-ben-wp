@@ -54,7 +54,7 @@
                 <div class="energieContainer">
                     <div class="textColumn">
                             <?php
-                                    $about_query = new WP_Query( array( 'p' => 104 ));
+                                    $about_query = new WP_Query( array( 'p' => 15 ));
                                     if( $about_query->have_posts() ) {
 
                                         while( $about_query->have_posts() ) {
