@@ -42,3 +42,37 @@
         }
     }
 }
+
+@include breakpoint(0, $tablet) {
+    #energie {
+        padding: 1rem;
+        .energieContainer {
+            .imagesColumn {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .textColumn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #energie {
+        padding: 1rem;
+        .energieContainer {
+            .imagesColumn {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .textColumn {
+                width: 100%;
+            }
+        }
+    }
+}

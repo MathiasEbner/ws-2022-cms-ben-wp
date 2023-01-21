@@ -51,3 +51,25 @@
         }
     }
 }
+
+@include breakpoint(0, $tablet) {
+    #news {
+        padding: 1rem;
+        .newsContainer {
+            article {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #news {
+        padding: 1rem;
+        .newsContainer {
+            article {
+                width: 100%;
+            }
+        }
+    }
+}

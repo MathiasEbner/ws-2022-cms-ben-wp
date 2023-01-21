@@ -56,3 +56,70 @@ footer {
         }
     }
 }
+
+@include breakpoint(0, $tablet) {
+    footer {
+        padding: 1rem;
+        .footerInfo {
+            justify-content: left;
+            gap: 1rem;
+            .adress {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                p:nth-child(5) {
+                    margin-top: 1rem;
+                }
+            }
+            .openingHours {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+
+                p {
+                    text-align: right;
+                }
+                p:nth-child(1) {
+                    text-align: left;
+                }
+            }
+            .contact {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+        .bottomContainer {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            p,
+            a {
+                font-weight: 600;
+                text-decoration: none;
+                color: $white;
+                font-family: "Work Sans";
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #news {
+        padding: 1rem;
+        .newsContainer {
+            article {
+                width: 100%;
+            }
+        }
+    }
+}

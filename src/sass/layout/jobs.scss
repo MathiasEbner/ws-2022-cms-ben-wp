@@ -38,3 +38,27 @@
         margin-top: 100px;
     }
 }
+
+@include breakpoint(0, $tablet) {
+    #jobs {
+        padding: 1rem;
+        .jobsContainer {
+            gap: 1rem;
+        }
+        .button {
+            margin: auto;
+            margin-top: 50px;
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #news {
+        padding: 1rem;
+        .newsContainer {
+            article {
+                width: 100%;
+            }
+        }
+    }
+}

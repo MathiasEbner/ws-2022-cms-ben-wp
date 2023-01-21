@@ -32,3 +32,35 @@
         }
     }
 }
+
+@include breakpoint(0, $tablet) {
+    #products {
+        .productsContainer {
+            .product:nth-child(even) {
+                flex-direction: column;
+            }
+            .product:nth-child(odd) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #products {
+        padding: 1rem;
+        .productsContainer {
+            .product {
+                img {
+                    width: 100%;
+                }
+            }
+            .product:nth-child(even) {
+                flex-direction: column;
+            }
+            .product:nth-child(odd) {
+                flex-direction: column;
+            }
+        }
+    }
+}

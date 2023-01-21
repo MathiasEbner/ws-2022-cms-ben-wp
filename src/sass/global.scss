@@ -126,3 +126,32 @@ a {
     background-color: $white;
     color: $grey;
 }
+
+@include breakpoint(0, $mobile) {
+    .super-headline {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.65rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+        padding: 0.65rem 0rem 0.65rem 1.25rem;
+    }
+    .subHeadlineFooter {
+        font-size: 1.5rem;
+        font-family: "Vollkorn";
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 1rem;
+    }
+    .jobButton {
+        font-size: 1rem;
+    }
+    .subHeadlineWorkshop {
+        font-size: 1.5rem;
+        color: $white;
+        font-family: "Vollkorn";
+        font-weight: 500;
+    }
+}

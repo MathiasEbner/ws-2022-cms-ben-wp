@@ -44,3 +44,15 @@
         }
     }
 }
+
+@include breakpoint(0, $tablet) {
+    #register {
+        padding: 1rem;
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #register {
+        padding: 1rem;
+    }
+}
