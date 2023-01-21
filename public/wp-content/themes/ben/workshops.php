@@ -33,7 +33,7 @@
         <header id="headerWorkshop">
             <div class="topNavContainer">
                 <h1>
-                    <a href="/"><img src="<?php echo get_template_directory_uri() ?>/images/Logo.svg" alt="" /> </a>
+                    <a href="/ben/"><img src="<?php echo get_template_directory_uri() ?>/images/Logo.svg" alt="" /> </a>
                 </h1>
                 <nav id="mainnav">
                     <button id="hamburger" class="closed">
